@@ -13,10 +13,10 @@ namespace Dealership.Models
       return "Our cars sound like " + sound;
     }
 
-    public void SetPrice(int newPrice)
-    {
-      _price = newPrice;
-    }
+    // public void SetPrice(int newPrice)
+    // {
+    //   Price = newPrice;
+    // }
 
     public Car(string makeModel, int price, int miles)
     {
@@ -42,7 +42,7 @@ namespace Dealership.Models
 
     public bool WorthBuying(int maxPrice)
     {
-      return (_price <= maxPrice);
+      return (Price <= maxPrice);
     }
   }
 }
